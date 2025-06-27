@@ -56,6 +56,16 @@ url de ejemplo: [rest.coincap.io/v3/assets?apiKey=YourApiKey/bitcoin](rest.coinc
 cambia la apikey por la vuestra. La encontraréis dentro de dashbard.
 [https://pro.coincap.io/dashboard](https://pro.coincap.io/dashboard)
 
+Si queréis usar esa KEY como variable de entorno podéis meterla en el archivo .env en la raiz del proyecto. Cualquier variable de entorno debe comenzar con VITE
+Ejemplo
+```js
+VITE_API_URL=
+```
+Y para usarla será así
+```js
+import.meta.env.VITE_API_URL
+```
+
 4. **CSS:**
 Además añade estilo a tu aplicación. Recuerda la diferencia de añadir estilos de manera modular y global.  
 
